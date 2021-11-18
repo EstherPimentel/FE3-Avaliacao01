@@ -1,0 +1,40 @@
+header {
+    .navbar-brand {
+        text-decoration: none;
+       
+     }
+
+    .navbar{
+        text-decoration: none;
+    
+       background:transparent !important;
+    }
+
+    .navbar-nav{
+      margin-right: 5.8rem;
+    }
+    
+    .navbar-nav>li>a {
+      text-decoration: none;
+      
+      margin: 10px;
+      padding: 5px;
+      border-radius: 10px;
+      font-weight: bold;
+      letter-spacing: 0.15rem;
+      transition: all 0.3s ease-in-out;
+      color: #D3A625 !important;
+      
+  
+      &:hover {
+        background:#D3A625;
+        color: #740001 !important;
+      }
+    }
+    .icone{
+      width:60px;
+      height:60px;
+      margin: 10px 40px 0 0;
+    }
+  
+}
