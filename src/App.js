@@ -4,9 +4,8 @@ import Header from './components/Header';
 import Banner from './components/Banner';
 import Footer from './components/Footer';
 import Projetos from './components/Projetos';
+import GridCards from './components/GridCards';
 import foto from './components/img/eu.jpg';
-
-
 import './App.scss';
 
 export default class App extends Component {
@@ -24,6 +23,7 @@ export default class App extends Component {
             </p>
           </Banner>
           <Projetos/>
+          <GridCards/>
         </main>
         <Footer redesContato={this.redesContato} />
       </div>
