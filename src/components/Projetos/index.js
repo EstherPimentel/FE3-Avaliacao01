@@ -1,7 +1,7 @@
 import './style.scss';
 import {Fragment} from 'react';
 import GridCards from '../GridCards';
-import Halloween from '../img/Halloween01.jpg'
+import Halloween from '../img/Halloween01.jpg';
 import Petinder from '../img/petinder.jpg';
 import Alice from '../img/Alice.jpg';
 
@@ -30,23 +30,23 @@ const listaProjetos = [
       titulo: "Petinder",
       sobre: "trabalho realizado em grupo como projeto final da disciplina Front-end 1",
       gitHub: "https://github.com/projetoFinalFrontEnd",
-      gitHubio: "https://projetofinalfrontend.github.io/projetoFinal/" //title= "Halloween02" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen/>
+      vercel: "https://projetofinalfrontend.github.io/projetoFinal/" //title= "Halloween02" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen/>
   }
 ]
 
   return (
     <section id="projetos">
       <div className="projetos">
-        <h2>Projetos:</h2>
-
-        {listaProjetos.map(idProjeto => {
+        <h2>Projetos</h2>
+        <div className="row row-cols-1 row-cols-md-3">
+        {listaProjetos.map((idProjeto) => {
             return(
                 <Fragment key={idProjeto.id}>
                   <GridCards idProjeto={idProjeto}/>
                 </Fragment>
         )})
       }
-
+        </div>
       </div>
     </section>
   )

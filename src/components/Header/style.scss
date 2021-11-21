@@ -1,4 +1,12 @@
 header {
+  width: 100%;
+    position: fixed;
+    padding: 0rem 0.5rem;
+    z-index: 3;
+    background-image: url("../img/pngwing.com.png");
+
+    
+  
     .navbar-brand {
         text-decoration: none;
        
@@ -24,6 +32,7 @@ header {
       letter-spacing: 0.15rem;
       transition: all 0.3s ease-in-out;
       color: #D3A625 !important;
+      background-color: #740001;
       
   
       &:hover {
@@ -31,10 +40,10 @@ header {
         color: #740001 !important;
       }
     }
-    .icone{
-      width:60px;
-      height:60px;
-      margin: 10px 40px 0 0;
+    .navbar-brand{
+      width:5%;
+      height:5%;
+      margin: 0px 40px 0 0;
     }
   
 }
